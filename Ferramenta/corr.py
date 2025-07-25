@@ -4,7 +4,7 @@ import numpy as np
 
 from dados import df_merged
 from alfas import df_dy_mensal
-from FIIs.lista_fundos_analisados import estrategias_fiis_reorganizado
+from Ferramenta.lista_fundos_analisados import estrategias_fiis_reorganizado
 from dados import correlacoes_por_variavel
 
 
@@ -123,4 +123,6 @@ resultados = calcular_correlacoes(
     limite_correlacao = 0.3
 )
 
-print(resultados["Pós-fixado"][0]["KNCR11"])
+
+for df in resultados["Tijolo"]:
+    print(df)

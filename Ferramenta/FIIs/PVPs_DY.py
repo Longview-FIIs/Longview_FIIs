@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-from lista_fundos_analisados import nomes_fundos_limpos
+from Ferramenta.lista_fundos_analisados import nomes_fundos_limpos
 
 # Função para puxar P/VP e Dividend Yield do Status Invest
 def get_pvp_e_dy(fii_ticker):

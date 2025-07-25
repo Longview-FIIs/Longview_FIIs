@@ -5,9 +5,9 @@ import json
 import numpy as np
 
 
-from FIIs.lista_fundos_analisados import df_precos
-from FIIs.lista_fundos_analisados import fundos_raw
-from FIIs.lista_fundos_analisados import nomes_fundos_limpos
+from Ferramenta.lista_fundos_analisados import df_precos
+from Ferramenta.lista_fundos_analisados import fundos_raw
+from Ferramenta.lista_fundos_analisados import nomes_fundos_limpos
 
 
 # (Opcional) Verificação

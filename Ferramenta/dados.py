@@ -51,7 +51,7 @@ for _, row in df_variaveis.iterrows():
 
             # Transformações
             if transformacao == 'Pct':
-                df_proc[nome] = df_proc[nome].pct_change() * 100
+                df_proc[nome] = df_proc[nome].pct_change()
                 df_proc = df_proc.dropna()
             elif transformacao == 'Diff':
                 df_proc[nome] = df_proc[nome].diff()
@@ -64,10 +64,18 @@ for _, row in df_variaveis.iterrows():
             df_proc = df_proc.drop(columns=["Data"])
             df_proc = df_proc[["MesAno", nome]]
 
+            if nome == "IBCbr":
+            
+                print(df_proc.tail(20))
+
+
+
             lista_dfs.append(df_proc)
 
         except Exception as e:
             print(f"Erro ao processar {nome} ({codigo}): {e}")
+
+
 
 from EPU import df_epu
 

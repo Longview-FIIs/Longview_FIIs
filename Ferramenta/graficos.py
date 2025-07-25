@@ -1,17 +1,4 @@
 import matplotlib.pyplot as plt
-import pandas as pd
-import matplotlib.pyplot as plt
-
-import matplotlib.pyplot as plt
-import os
-
-import matplotlib.pyplot as plt
-import os
-
-import matplotlib.pyplot as plt
-import os
-
-import matplotlib.pyplot as plt
 import os
 import pandas as pd
 
@@ -83,7 +70,7 @@ def gerar_graficos_dy_vs_cdi(
     return resultados
 
 from alfas import df_dy_mensal
-from FIIs.lista_fundos_analisados import estrategias_fiis_reorganizado
+from Ferramenta.lista_fundos_analisados import estrategias_fiis_reorganizado
 from alfas import serie_cdi
 
 graficos = gerar_graficos_dy_vs_cdi(
