@@ -77,7 +77,7 @@ def sintetizar_sinal_final(sinais):
 from dados import df_merged
 from alfas import df_dy_mensal
 from corr import resultados
-from lista_fundos_analisados import correlacoes_por_variavel
+from dados import correlacoes_por_variavel
 
 categoria = "Pós-fixado"
 sinais_categoria = []
